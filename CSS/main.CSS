@@ -55,12 +55,12 @@ nav {
 .nav-list {
     display: flex;
     justify-content: space-around;
-    width: 50%;
+    width: 60vw;
 }
 
 .nav-item {
     transition: border-bottom 0.5s;
-    border-bottom: 3px solid rgba(140, 0, 255, 0);
+    border-bottom: 3px solid transparent;
     /* border-bottom: none; */
 }
 .nav-item:first-child {
@@ -194,10 +194,9 @@ main section {
 /* my skill */
 .container {
     margin-top: 30px;
-    width: 90%;
+    width: 80%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 300px;
     justify-items: center;
 }
 
@@ -358,4 +357,54 @@ main section {
 .skill-name[class*='JS'] {
     position: relative;
     left: -20px;
+}
+
+/* Comment employers  */
+.comments {
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    margin-top: 50px;
+}
+
+.comment-box {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 70px;
+}
+
+.comment-box:nth-child(odd) {
+    border-left: 2px solid rgba(140, 0, 255, 0.137);
+}
+
+.comment-box * {
+    margin-bottom: 10px;
+}
+
+.employer-img {
+    border-radius: 10000vw;
+    width: 120px;
+}
+
+.comment-box h3 {
+    color: rgb(140, 0, 255);
+}
+.employer-name {
+    margin-bottom: 5px !important;
+}
+.comment-text {
+    text-align: center;
+    line-height: 35px;
+}
+
+.rate {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.star {
+    width: 20px;
+    margin: 0 3px 7px 3px;
 }

@@ -1,0 +1,97 @@
+@media screen and (max-width: 1390px) {
+    .buttons {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 958px) {
+    nav {
+        justify-content: center;
+    }
+
+    .nav-list {
+        justify-content: space-between;
+        width: 90%;
+    }
+
+    .Logo {
+        display: none;
+    }
+
+    .buttons {
+        width: 50%;
+    }
+}
+
+
+@media screen and (max-width: 786px) {
+    /* Variables Responsive */
+    .primary-btn {
+        width: 160px;
+        font-size: 16px;
+    }
+
+    /* Nav Responsive  */
+    .nav-list {
+        width: 100%;
+        font-size: 14px;
+        justify-content: space-between;
+    }
+
+    .nav-item {
+        padding-bottom: 7px;
+        border-bottom: 2px solid transparent;
+    }
+
+    .nav-item:hover {
+        border-bottom: 2px solid rgb(140, 0, 255);
+    }
+    .nav-link .fa {
+        display: none;
+    }
+
+    .Logo {
+        display: none;
+    }
+
+    /* Header Content  */
+    .logo-2 {
+        width: 120px;
+    }
+
+    .header-content {
+        width: 80%;
+    }
+
+    /* About US Responsive */
+    .buttons {
+        width: 80%;
+    }
+
+    /* My Skills Responsive */
+    .container {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .design-skill,
+    .frontend-skill {
+        width: 75%;
+    }
+
+    .design-skill {
+        margin-bottom: 30px;
+    }
+
+    /* Comment employers Responsive */
+    .comments {
+        grid-template-columns: 1fr;
+    }
+
+    .comment-box {
+        margin-bottom: 40px;
+    }
+    .comment-box:nth-child(odd) {
+        border: none;
+    }
+}
