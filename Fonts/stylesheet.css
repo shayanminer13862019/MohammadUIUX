@@ -1,0 +1,22 @@
+@font-face {
+    font-family: "IRANSans-Medium";
+    src: url("IRANSans-Medium.eot");
+    src: url("IRANSans-Medium.eot?#iefix") format("embedded-opentype"), url("IRANSans-Medium.woff2") format("woff2"), url("IRANSans-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "IRANSans-Regular";
+    src: url("IRANSans.eot");
+    src: url("IRANSans.eot?#iefix") format("embedded-opentype"), url("IRANSans.woff2") format("woff2"), url("IRANSans.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --IRANSans-Regular--: "IRANSans-Regular", calibri, arial;
+    --IRANSans-Medium--: "IRANSans-Medium", calibri, arial;
+}

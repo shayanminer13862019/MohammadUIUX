@@ -1,0 +1,361 @@
+@import "varibles.CSS";
+
+/* Reset Setting  */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: var(--IRANSans-Regular--);
+    font-size: 15px;
+    user-select: none;
+    user-zoom: unset;
+    background-color: #fafafa;
+    font-size: 16px;
+    padding-bottom: 200px;
+    overflow-x: hidden;
+}
+
+/* Global Setting */
+
+::selection {
+    background-color: rgb(140, 0, 255);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+/* Header  */
+header {
+    background: linear-gradient(rgba(20, 20, 20, 0.699), rgba(20, 20, 20, 0.699)), url(../Images/BG.jpg) no-repeat center center/cover;
+    height: 100vh;
+    color: #f4f4f4;
+    position: relative;
+    border-bottom: 3px solid rgba(140, 0, 255, 0.637);
+}
+
+/* Nav  */
+nav {
+    padding: 25px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.nav-item {
+    transition: border-bottom 0.5s;
+    border-bottom: 3px solid rgba(140, 0, 255, 0);
+    /* border-bottom: none; */
+}
+.nav-item:first-child {
+    border-bottom: 3px solid rgb(140, 0, 255);
+}
+
+.nav-item:nth-child(5):hover,
+.nav-item:nth-child(4):hover,
+.nav-item:nth-child(3):hover,
+.nav-item:nth-child(2):hover {
+    border-bottom: 3px solid rgb(140, 0, 255);
+}
+
+.nav-link {
+    color: #ffffff;
+}
+
+.nav-link .fa {
+    margin-left: 7px;
+    font-size: 18px;
+}
+
+/* Logo  */
+.Logo {
+    width: 40px;
+}
+
+/* Header content  */
+.header-content {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo-2 {
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-family: helvetica, "IRANSans-Regular", "IRANSans-Medium", arial, Calibri;
+    letter-spacing: 2px;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.line {
+    display: flex;
+    justify-content: center;
+    width: 65px;
+    height: 4px;
+    border-radius: 100000vw;
+    margin-bottom: 15px;
+}
+
+.line div {
+    width: 45px;
+    height: 4px;
+    border-radius: 1000vw;
+    opacity: 0.9;
+}
+
+.biography {
+    text-align: center;
+    line-height: 40px;
+    font-family: var(--IRANSans-Medium--);
+    font-size: 19px;
+    margin-bottom: 30px;
+}
+
+.tap {
+    height: 4vh;
+    position: absolute;
+    top: 92vh;
+    left: 50%;
+    transform: translate(-50%, 0);
+    animation: up-down 1s infinite reverse;
+}
+
+@keyframes up-down {
+    50% {
+        top: 91vh;
+    }
+    100% {
+        top: 92vh;
+    }
+}
+
+/* Main  */
+main {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+main section {
+    margin-bottom: 80px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+/* About US */
+.about-us {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100vw;
+}
+
+.about-us p {
+    line-height: 50px;
+    width: 70%;
+    font-size: 19px;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    margin-top: 40px;
+}
+
+/* my skill */
+.container {
+    margin-top: 30px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 300px;
+    justify-items: center;
+}
+
+.container h2 {
+    margin-bottom: 20px;
+}
+
+.design-skill,
+.frontend-skill {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 60%;
+}
+
+.progress-box {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Xd Skill Setting */
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background: rgb(219, 219, 219);
+    border-radius: 5px;
+    box-shadow: 0 2px 3px #8c00ff5e;
+}
+
+.completed {
+    background: #8c00ff;
+    width: 95%;
+    height: 20px;
+    border-radius: 5px;
+}
+
+.progress-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    align-items: flex-end;
+}
+
+.skill-img-name {
+    display: flex;
+    align-items: center;
+}
+
+.skill-name {
+    font-weight: 500;
+    margin-left: 7px;
+}
+
+.progress-status {
+    margin-left: 10px;
+    color: #8c00ff;
+}
+
+/* Figma Skill Setting  */
+.figma {
+    position: relative;
+}
+
+.skill-img-name[class*="figma"] {
+    bottom: -7px;
+}
+
+.skill-img[class*="figma"] {
+    left: -9px;
+}
+
+.skill-name[class*="figma"] {
+    left: -19px;
+}
+
+.progress-bar[class*="figma"] {
+    box-shadow: 0 3px 5px rgba(0, 128, 0, 0.39);
+    margin-bottom: 20px;
+}
+
+.completed[class*="figma"] {
+    width: 75%;
+    background-color: green;
+}
+
+.progress-status[class*="figma"] {
+    color: green;
+}
+
+/* Ai Skill Setting  */
+.progress-bar[class*="Ai"] {
+    box-shadow: 0 3px 5px rgba(255, 166, 0, 0.377);
+}
+
+.completed[class*="Ai"] {
+    width: 15%;
+    background-color: orange;
+}
+
+.progress-status[class*="Ai"] {
+    color: orange;
+}
+
+/* HTML Skill Setting */
+.progress-bar[class*="HTML"] {
+    box-shadow: 0 3px 5px rgba(255, 68, 0, 0.384);
+}
+
+.completed[class*="HTML"] {
+    width: 100%;
+    background: orangered;
+}
+
+.progress-status[class*="HTML"] {
+    color: orangered;
+}
+
+/* CSS Skill Setting  */
+.progress-box[class*="CSS"] {
+    margin-top: 10px;
+}
+
+.progress-bar[class*="CSS"] {
+    box-shadow: 0 3px 5px rgba(65, 105, 225, 0.493);
+}
+
+.completed[class*="CSS"] {
+    background-color: royalblue;
+}
+
+.progress-status[class*="CSS"] {
+    color: royalblue;
+}
+
+/* JS Skill Setting  */
+.progress-box[class*='JS'] {
+    margin-top: 15px;
+}
+
+.progress-bar[class*="JS"] {
+    box-shadow: 0 3px 5px rgba(255, 255, 0, 0.479);
+}
+
+.completed[class*="JS"] {
+    width: 20%;
+    background-color: yellow;
+}
+
+.progress-status[class*="JS"] {
+    color: rgb(141, 141, 30);
+}
+
+.skill-img[class*='JS'] {
+    position: relative;
+    left: -10px;
+}
+
+.skill-name[class*='JS'] {
+    position: relative;
+    left: -20px;
+}
